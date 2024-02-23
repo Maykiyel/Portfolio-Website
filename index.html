@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/briefcase.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <p class="header__title">Portfolio</p>
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#featured">Work</a></li>
+          <li><a class="header__link" href="#contact">Contact</a></li>
+          <li class="header__line"></li>
+          <li>
+            <a href="https://www.facebook.com/maykeldavs" target="_blank"
+              ><i class="fa-brands fa-facebook header__link"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/maykiyell" target="_blank"
+              ><i class="fa-brands fa-twitter header__link"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/maykiyel/" target="_blank"
+              ><i class="fa-brands fa-instagram header__link"></i
+            ></a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <a class="header__resume btn" href="/Resume.pdf" target="_blank"
+            >Resume</a
+          >
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a href="#about" class="mobile-nav__link">About</a></li>
+          <li><a href="#featured" class="mobile-nav__link">Work</a></li>
+          <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <a href="https://www.facebook.com/maykeldavs" target="_blank"
+              ><i class="fa-brands fa-facebook mobile-nav__link"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/maykiyell" target="_blank"
+              ><i class="fa-brands fa-twitter mobile-nav__link"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/maykiyel/" target="_blank"
+              ><i class="fa-brands fa-instagram mobile-nav__link"></i
+            ></a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="/Resume.pdf" target="_blank" class="mobile-nav__btn btn"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Nav -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/Me.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Hi, I'm Michael 👋</h2>
+        <h1 class="hero__title">
+          FRONT-END <br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="hero__description">
+          An aspiring and passionate
+          <strong>Front-end web developer</strong> and <strong>UI/UX</strong>
+          enthusiast specialized in building stunning pixel-perfect interactive
+          websites/applications.
+        </p>
+        <a class="hero__btn btn">Let's talk!</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hello there! I'm Michael, an aspiring
+            <strong>Front-end web developer</strong> based at Angeles City.
+          </p>
+          <p class="about__description">
+            I'm also studying the basics of Back-end development in hopes of
+            becoming a Fullstack developer one day.
+          </p>
+          <p class="about__description">
+            It would be my pleasure to be a part of your amazing team! Not only
+            would it help me pursue my dreams, but it would also allow me to
+            collaborate with talented individuals like yourselves and make
+            meaningful contributions to our shared goals.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">JavaScript</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Bootstrap</li>
+              <li class="about__list">Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading"
+            src="https://fakeimg.pl/600x600"
+            data-src="/AA.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured Project</h3>
+        <h2 class="featured__title">CO<sub>2</sub></h2>
+        <p class="featured__description">
+          This project was made for my final exams, we were given a project to
+          create a <a>Static Website</a> of a mock brand of our own with a clean
+          and minimalist design. I believe I've performed well on this task, and
+          I'm considering including it in my portfolio to showcase my skills in
+          design and project execution. The focus is on delivering a streamlined
+          and visually appealing platform that highlights the clothing
+          collection while providing a user-friendly experience. I ensured that
+          the website is not only user-friendly but also highly intuitive,
+          guaranteeing a seamless and hassle-free navigation experience for
+          visitors.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">HTML</li>
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">Bootstrap</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">project type</h3>
+            <p class="featured__info">static website</p>
+          </div>
+          <div>
+            <h3 class="featured__label">timeline</h3>
+            <p class="featured__info">december 2022 - january 2023</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/Home page.png"
+            alt="CO2 Hero"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/Shirt Area.png"
+            alt="CO2 Products"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/Pants Area.png"
+            alt="CO2 Products"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/Product Preview.png"
+            alt="CO2 Preview"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/Cart.png"
+            alt="CO2 cart"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/About Us Section 2.png"
+            alt="CO2 About"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="/About Us Section 3.png"
+            alt="CO2 Team"
+          />
+          <img
+            class="featured__img lazy loading"
+            src="https://fakeimg.pl/1366x668"
+            data-src="Contact Page 2.png"
+            alt="CO2 Contact"
+          />
+        </div>
+        <div id="popup" class="popup">
+          <span class="popup__close" id="popupClose">&times;</span>
+          <img class="popup__img" id="popupImg" src="" alt="Popup Image" />
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Welcome to the projects section. While I currently have only one
+          project to showcase, rest assured that I will diligently update this
+          section as I complete newer projects.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">CO<sub>2</sub></h3>
+          <div class="work__img-wrapper work__img1">
+            <img
+              class="work__img lazy loading"
+              src="https://fakeimg.pl/700x700"
+              data-src="/CO2.png"
+              alt="CO2 Homepage"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">CO<sub>2</sub></h3>
+            <p class="work__project-description1">
+              This was my first major project for our final exams, and I take
+              great pride in it.
+            </p>
+            <p class="work__project-description2">
+              In this project assigned to us, I chose to create an online
+              clothing store. The careful design considerations implemented aim
+              to eliminate any potential issues associated with finding
+              information or moving through the site, making it effortlessly
+              accessible to users of all levels of technological proficiency.
+              <br /><br /><a>Note</a>: There will be no link to this website
+              since it was never released; it was solely created for a school
+              project.
+            </p>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Project Slot</h3>
+          <div class="work__img-wrapper work__img2">
+            <img
+              class="work__img lazy loading"
+              src="https://fakeimg.pl/600x600"
+              data-src="http://via.placeholder.com/900x900"
+              alt="placeholder"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Project Slot</h3>
+            <p class="work__project-description1">
+              This is merely a placeholder intended to demonstrate the layout of
+              this section for future updates or expansions. Feel free to
+              disregard this part.
+            </p>
+            <p class="work__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a href="" class="btn work__project-btn">Website</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          I am eager to become a valuable asset to your remarkable team! My
+          inbox is always open, so please feel free to reach out, and I will
+          respond as promptly as possible.
+        </p>
+        <a
+          href="mailto:flornicamj@gmail.com"
+          target="_blank"
+          class="contact__btn btn"
+          >Reach Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">- Michael David -</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fdf3338ee0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
