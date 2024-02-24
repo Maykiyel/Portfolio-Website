@@ -23,9 +23,10 @@
 .hero__title {
   background: -webkit-radial-gradient(
     circle,
-    rgba(168, 85, 247, 1) 0%,
-    rgba(34, 211, 238, 1) 100%
+    rgba(34, 211, 238, 1) 0%,
+    rgba(168, 85, 247, 1) 50%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
