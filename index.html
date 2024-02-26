@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -176,18 +176,27 @@
       <section id="featured" class="featured container section">
         <h3 class="featured__subtitle">Featured Project</h3>
         <h2 class="featured__title">CO<sub>2</sub></h2>
-        <p class="featured__description">
-          This project was made for my final exams, we were given a project to
-          create a <a>Static Website</a> of a mock brand of our own with a clean
-          and minimalist design. I believe I've performed well on this task, and
-          I'm considering including it in my portfolio to showcase my skills in
-          design and project execution. The focus is on delivering a streamlined
-          and visually appealing platform that highlights the clothing
-          collection while providing a user-friendly experience. I ensured that
-          the website is not only user-friendly but also highly intuitive,
-          guaranteeing a seamless and hassle-free navigation experience for
-          visitors.
-        </p>
+        <div class="featured__content">
+          <p class="featured__description">
+            This project was made for my final exams, we were given a project to
+            create a <a>Static Website</a> of a mock brand of our own with a
+            clean and minimalist design. I believe I've performed well on this
+            task, and I'm considering including it in my portfolio to showcase
+            my skills in design and project execution. The focus is on
+            delivering a streamlined and visually appealing platform that
+            highlights the clothing collection while providing a user-friendly
+            experience. I ensured that the website is not only user-friendly but
+            also highly intuitive, guaranteeing a seamless and hassle-free
+            navigation experience for visitors.
+          </p>
+          <!-- Video element here -->
+          <div class="featured__video-container">
+            <video class="featured__video" controls>
+              <source src="/CO2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
         <div class="featured__info-container">
           <div>
             <h3 class="featured__label">tech stack</h3>
