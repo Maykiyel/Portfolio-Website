@@ -107,7 +107,7 @@
 /* xl */
 @media (min-width: 1280px) {
   .hero {
-    gap: 2re;
+    gap: 2rem;
   }
 
   .hero__img {
