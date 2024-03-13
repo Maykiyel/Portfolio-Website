@@ -50,6 +50,7 @@ body {
   font-family: "Satoshi", sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
+  transition: background-color 200ms, color 200ms;
 }
 
 img,
