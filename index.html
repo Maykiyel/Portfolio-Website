@@ -175,28 +175,53 @@
       </section>
       <section id="featured" class="featured container section">
         <h3 class="featured__subtitle">Featured Project</h3>
-        <h2 class="featured__title">CO<sub>2</sub></h2>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Mastering JavaScript</h2>
+          <a
+            href="https://mastering-js.vercel.app"
+            target="_blank"
+            class="featured__link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
         <div class="featured__content">
           <p class="featured__description">
-            This project was made for my final exams, we were given a project to
-            create a <a>Static Website</a> of a mock brand of our own with a
-            clean and minimalist design. I believe I've performed well on this
-            task, and I'm considering including it in my portfolio to showcase
-            my skills in design and project execution. The focus is on
-            delivering a streamlined and visually appealing platform that
-            highlights the clothing collection while providing a user-friendly
-            experience. I ensured that the website is not only user-friendly but
-            also highly intuitive, guaranteeing a seamless and hassle-free
-            navigation experience for visitors.
+            This project demonstrates my progression in
+            <strong>JavaScript</strong>, showcasing increasingly complex
+            applications. These apps contains simple utilities like a
+            <a>Counter</a> to advanced tools like a <a>Calculator</a> and a
+            <a>Weather App</a>. Each program reflects my growth as a developer.
+            JavaScript's versatility shines through as I tackle diverse
+            challenges, honing my skills in syntax, data manipulation, and
+            integration with external APIs. Through these projects, I showcase
+            my passion for problem-solving and innovation while highlighting the
+            endless possibilities offered by JavaScript in crafting impactful
+            solutions.
           </p>
           <!-- Video element here -->
           <div class="featured__video-container">
             <video
               class="featured__video lazy loading"
               src="https://fakeimg.pl/1366x768"
-              data-src="/CO2.mp4"
+              data-src="/MasteringJS.mp4"
               type="video/mp4"
-              controls
+              autoplay
+              loop
+              muted
             >
               Your browser does not support the video tag.
             </video>
@@ -206,10 +231,11 @@
           <div>
             <h3 class="featured__label">tech stack</h3>
             <ul class="featured__tech-stack">
+              <li class="featured__info">Vite</li>
               <li class="featured__info">HTML</li>
               <li class="featured__info">CSS</li>
               <li class="featured__info">JavaScript</li>
-              <li class="featured__info">Bootstrap</li>
+              <li class="featured__info">Tailwind CSS</li>
             </ul>
           </div>
           <div>
@@ -218,57 +244,45 @@
           </div>
           <div>
             <h3 class="featured__label">timeline</h3>
-            <p class="featured__info">december 2022 - january 2023</p>
+            <p class="featured__info">March 2024</p>
           </div>
         </div>
         <div class="featured__img-container">
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/Home page.png"
-            alt="CO2 Hero"
+            data-src="/Hero.png"
+            alt="MJS Hero"
           />
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/Shirt Area.png"
-            alt="CO2 Products"
+            data-src="/About.png"
+            alt="MJS About"
           />
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/Pants Area.png"
-            alt="CO2 Products"
+            data-src="/Apps.png"
+            alt="MJS Apps"
           />
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/Product Preview.png"
+            data-src="/End.png"
             alt="CO2 Preview"
           />
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/Cart.png"
-            alt="CO2 cart"
+            data-src="/SampleApp.png"
+            alt="Sample App"
           />
           <img
             class="featured__img lazy loading"
             src="https://fakeimg.pl/1366x668"
-            data-src="/About Us Section 2.png"
-            alt="CO2 About"
-          />
-          <img
-            class="featured__img lazy loading"
-            src="https://fakeimg.pl/1366x668"
-            data-src="/About Us Section 3.png"
-            alt="CO2 Team"
-          />
-          <img
-            class="featured__img lazy loading"
-            src="https://fakeimg.pl/1366x668"
-            data-src="Contact Page 2.png"
-            alt="CO2 Contact"
+            data-src="/SampleApp2.png"
+            alt="Sample App 2"
           />
         </div>
         <!-- Pop up image -->
@@ -287,8 +301,36 @@
         </p>
         <div class="work__container">
           <!-- Project 1 -->
-          <h3 class="work__project-title">CO<sub>2</sub></h3>
+          <h3 class="work__project-title">Mastering JavaScript</h3>
           <div class="work__img-wrapper work__img1">
+            <img
+              class="work__img lazy loading"
+              src="https://fakeimg.pl/700x700"
+              data-src="/MJS.png"
+              alt="placeholder"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Mastering JavaScript</h3>
+            <p class="work__project-description1">
+              This project showcases my progression in learning JavaScript
+              through a series of programs that progressively gets more
+              challenging.
+            </p>
+            <p class="work__project-description1">
+              Through this platform, I share my journey, insights, and the
+              lessons learned along the way.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://mastering-js.vercel.app"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">CO<sub>2</sub></h3>
+          <div class="work__img-wrapper work__img2">
             <img
               class="work__img lazy loading"
               src="https://fakeimg.pl/700x700"
@@ -296,7 +338,7 @@
               alt="CO2 Homepage"
             />
           </div>
-          <div class="work__project work__content1">
+          <div class="work__project work__content2">
             <h3 class="work__project-subtitle">CO<sub>2</sub></h3>
             <p class="work__project-description1">
               This was my first major project for our final exams, and I take
@@ -308,31 +350,9 @@
               to eliminate any potential issues associated with finding
               information or moving through the site, making it effortlessly
               accessible to users of all levels of technological proficiency.
-              <br /><br /><a>Note</a>: There will be no link to this website
-              since it was never released; it was solely created for a school
-              project.
-            </p>
-          </div>
-          <!-- Project 2 -->
-          <h3 class="work__project-title">Mastering JavaScript</h3>
-          <div class="work__img-wrapper work__img2">
-            <img
-              class="work__img lazy loading"
-              src="https://fakeimg.pl/700x700"
-              data-src="/MJS.png"
-              alt="placeholder"
-            />
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__project-subtitle">Mastering JavaScript</h3>
-            <p class="work__project-description1">
-              This project showcases my progression in learning JavaScript
-              through a series of programs that progressively gets more
-              challenging.
             </p>
             <p class="work__project-description2">
-              Through this platform, I share my journey, insights, and the
-              lessons learned along the way.
+              <a>Note:</a> I'm rebuilding this project with React.
             </p>
             <a class="btn work__project-btn">Coming Soon</a>
           </div>

@@ -9,11 +9,23 @@
   text-transform: uppercase;
 }
 
+.featured__link {
+  display: inline-block;
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+}
+
 .featured__subtitle {
   font-size: var(--size-sm);
   color: var(--clr-cyan);
   text-transform: capitalize;
   font-weight: 400;
+}
+
+.featured__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .featured__description {
@@ -123,6 +135,11 @@
     font-size: var(--size-3xl);
   }
 
+  .featured__link {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+  }
+
   .featured__description {
     font-size: var(--size-base);
     margin: 1.5rem 0;
@@ -168,6 +185,11 @@
     font-size: var(--size-4xl);
   }
 
+  .featured__link {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+  }
+
   .featured__description {
     font-size: var(--size-lg);
     max-width: 45ch;
@@ -199,6 +221,11 @@
 
   .featured__title {
     font-size: var(--size-5xl);
+  }
+
+  .featured__link {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
   }
 
   .featured__description {
